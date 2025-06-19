@@ -10,10 +10,10 @@ from alembic import context
 # Add the parent directory to the Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from app.models.budget import Budget
-from app.models.financial_goal import FinancialGoal
-from app.models.user import User
-from app.database import Base
+from spendymgr.models.budget import Budget
+from spendymgr.models.financial_goal import FinancialGoal
+from spendymgr.models.user import User
+from spendymgr.database import Base
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

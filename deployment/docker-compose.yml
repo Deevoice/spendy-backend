@@ -1,0 +1,15 @@
+services:
+  app:
+    image: ghcr.io/deevoice/spendy-backend
+
+    restart: unless-stopped
+
+    environment:
+      MODE: app
+
+    volumes:
+      - ./data/avatars:./avatars
+      - ./data/spendy.db:./spendy.db
+
+    ports:
+      - 127.0.0.1:8000:8000
